@@ -31,10 +31,6 @@ export interface IAuthDocument {
   profilePicture?: string;
   emailVerified?: number;
   emailVerificationToken?: string;
-  browserName?: string;
-  deviceType?: string;
-  otp?: string;
-  otpExpiration?: Date;
   createdAt?: Date;
   updatedAt?: Date;
   passwordResetToken?: string;
@@ -58,7 +54,6 @@ export interface IEmailMessageDetails {
   verifyLink?: string;
   resetLink?: string;
   username?: string;
-  otp?: string;
 }
 
 export interface ISignUpPayload {
