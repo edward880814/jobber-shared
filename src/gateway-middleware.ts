@@ -33,7 +33,10 @@ export function verifyGatewayRequest(
   }
 
   try {
-    const payload: { id: string; iat: number } = JWT.verify(token, '') as {
+    const payload: { id: string; iat: number } = JWT.verify(
+      token,
+      '1282722b942e08c8a6cb033aa6ce850e'
+    ) as {
       id: string;
       iat: number;
     };
